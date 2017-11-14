@@ -1,10 +1,60 @@
 <html>
-<body>
-<div style="border:5px solid red">
-<h1 style="text-align:center; color:green;"><i style="color:red">i</i>maginary<i style="color:blue;">i</i>nfinity BrowserTest</h1>
-</div>
-<br>
-<hr>
 
-</body>
+    <h1>
+        <center style="color:green;"><i style="color:red;">i</i>maginary<i style="color:blue;">i</i>nfinity</center>
+    <div style="border:2px solid orange;">
+        BrowserTest 1.1 beta
+    </div>
+    </h1>
+    <hr size="20" style="background-color:red;">
+    <div style="border:5px dashed black;">
+        Date Tested:
+        <hr>
+        
+        <script>
+            document.write(Date())
+            </script>
+        <br>
+        <br>
+        <br>
+        UserAgent:
+        <hr>
+        <script>
+            document.write(navigator.userAgent)
+            </script>
+        <br>
+        <br>
+        <br>
+        Screensize:
+        <hr>
+        <script>
+            document.write(screen.width+"*"+screen.height)
+            
+            </script>
+        <br>
+        <br>
+        <br>
+        Windowsize:
+        <hr>
+        <script>
+            document.write(window.innerWidth+"*"+window.innerHeight)
+            </script>
+        <br>
+        <br>
+        <br>
+        
+        Supports JavaScript:
+        <hr>
+        <script>
+            document.write("Yes")
+            </script>
+        <noscript>
+            No
+        </noscript>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <footer style="border:5px solid red; background-color:red;">
+    <center><button onclick="location.reload()" style="background-color:black; color:red; border:2px solid red;">Retest</button><button style="background-color:black; color:red; border:2px solid red;" onclick="window.close()">Exit BrowserTest</button></center>
 </html>

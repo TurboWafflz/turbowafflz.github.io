@@ -1,3 +1,9 @@
+
+if [ `/bin/sed -r -e 's/\x0.*//' /proc/$$/cmdline` != "bash" ]
+then
+    bash ./lintest.sh
+    exit
+fi
 clear
 x=0
 y=0
@@ -9,7 +15,8 @@ echo ''
 echo ''
 echo 'Press [ENTER]' | boxes -d ccel
 tput sgr0
-read x
+read -n 1 x
+echo ''
 clear
 tput setaf 3
 figlet LinTest 1.0 Beta -w 999 | boxes -d stone | boxes -d simple | boxes -d shell
@@ -30,10 +37,10 @@ tput sgr0
 tput setaf 11
 echo ''
 echo ''
-echo 'Press [ENTER] to continue or type "o" and press [ENTER] for options' | boxes -d ccel
+echo 'Press [ENTER] to continue or press [o] for options' | boxes -d ccel
 tput sgr0
-read x
-if [ "$x" = "easter egg" ]
+read -n 1 x
+if [ "$x" = "e" ]
 then
 clear
 cowsay -f unipony 'You found me!' | /usr/games/lolcat
@@ -57,7 +64,7 @@ echo ''
 echo ''
 echo 'Type Number of selection or [q] to quit and press [ENTER]' | boxes -d ccel
 tput sgr0
-read y
+read -N 1 y
 if [ "$y" = "5" ]
 then
 /usr/bin/cmatrix -b -s

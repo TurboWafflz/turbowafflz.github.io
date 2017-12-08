@@ -62,7 +62,7 @@ echo ''
 tput setaf 11
 echo ''
 echo ''
-echo 'Type Number of selection or [q] to quit and press [ENTER]' | boxes -d ccel
+echo 'Type Number of selection or [q] to quit' | boxes -d ccel
 tput sgr0
 read -N 1 y
 if [ "$y" = "5" ]

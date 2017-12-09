@@ -1,8 +1,8 @@
 clear
 tput setaf 1
-figlet -w 999 '[==FMW==]'
+figlet -w 80 '[==FMW==]'
 tput setaf 2
-figlet -w 999 '    [=CALC=]'
+figlet -w 80 '[=CALC=]'
 tput setaf 3
 echo "v0.1 beta"
 echo ""

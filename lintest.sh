@@ -1,4 +1,4 @@
-
+#!/bin/bash
 if [ `/bin/sed -r -e 's/\x0.*//' /proc/$$/cmdline` != "bash" ]
 then
     bash ./lintest.sh

@@ -1,4 +1,4 @@
-#!/bin/bash
+
 if [ `/bin/sed -r -e 's/\x0.*//' /proc/$$/cmdline` != "bash" ]
 then
     bash ./lintest.sh
@@ -55,6 +55,7 @@ echo '[2] Set date'
 echo '[3] View code'
 echo '[4] Screen details without xrandr'
 echo '[5] Screen test'
+echo '[6] Test keyboard leds (X MUST NOT be running)'
 echo '[q] Exit'
 tput sgr0
 echo ''
@@ -62,9 +63,30 @@ echo ''
 tput setaf 11
 echo ''
 echo ''
-echo 'Type Number of selection or [q] to quit' | boxes -d ccel
+echo 'Type Number of selection or [q] to quit and press [ENTER]' | boxes -d ccel
 tput sgr0
 read -N 1 y
+if [ "$y" = "6" ]
+then
+while /bin/true
+do
+setleds +num
+setleds +caps
+setleds +scroll
+sleep 5
+setleds -num
+sleep 1
+setleds -caps
+sleep 1
+setleds -scroll
+sleep 5
+setleds +num
+sleep 1
+setleds +caps
+sleep 1
+setleds +scroll
+done
+fi
 if [ "$y" = "5" ]
 then
 /usr/bin/cmatrix -b -s
@@ -148,7 +170,7 @@ echo `echo 'Columns:'; tput cols; echo 'Lines:'; tput lines` | boxes -d simple
 echo ''
 tput sgr0
 tput setaf 19
-echo 'Screen'
+echo 'Screen (X only)'
 tput setaf 3
 xrandr | boxes -d simple
 tput sgr0

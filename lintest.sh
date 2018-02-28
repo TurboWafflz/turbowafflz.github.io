@@ -56,6 +56,7 @@ echo '[3] View code'
 echo '[4] Screen details without xrandr'
 echo '[5] Screen test'
 echo '[6] Test keyboard leds (X MUST NOT be running)'
+echo '[7] About'
 echo '[q] Exit'
 tput sgr0
 echo ''
@@ -66,6 +67,13 @@ echo ''
 echo 'Type Number of selection or [q] to quit and press [ENTER]' | boxes -d ccel
 tput sgr0
 read -N 1 y
+if [ "$y" = "7" ]
+then
+clear
+echo 'Lintest 1.0 by Finian Wright'
+echo 'Visit https://turbowafflz.github.io for more cool stuff!'
+exit
+fi
 if [ "$y" = "6" ]
 then
 while /bin/true
@@ -113,7 +121,7 @@ echo 'EXIT'
 tput sgr0
 exit
 fi
-if [ "$y" = "1"]
+if [ "$y" = "1" ]
 then
 echo ''
 fi

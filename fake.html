@@ -1,5 +1,21 @@
 <html>
 <script type="text/javascript">
+    var el = document.documentElement
+    , rfs = // for newer Webkit and Firefox
+           el.requestFullScreen
+        || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen
+        || el.msRequestFullscreen
+;
+if(typeof rfs!="undefined" && rfs){
+  rfs.call(el);
+} else if(typeof window.ActiveXObject!="undefined"){
+  // for Internet Explorer
+  var wscript = new ActiveXObject("WScript.Shell");
+  if (wscript!=null) {
+     wscript.SendKeys("{F11}");
+  }
+}
     function requestFullScreen(element) {
     // Supports most browsers and their versions.
     var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;

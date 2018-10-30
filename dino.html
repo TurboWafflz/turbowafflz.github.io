@@ -146,15 +146,7 @@ html, body {
   }
 }
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>
-setInterval(function(){
-        $('blink').each(function() {
-            $(this).toggle();
-        });
-    }, 250);
-</script>    
-<script>// Copyright (c) 2014 The Chromium Authors. All rights reserved.
+    <script>// Copyright (c) 2014 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 // extract from chromium source code by @liuwayong
@@ -2891,6 +2883,7 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
 <h1><center>Chrome Dinosaur Game In One HTML File!</h1></center>
 <center><h4>Shrinkified By TurboWafflz (<a href="http://turbowafflz.github.io">turbowafflz.github.io</a>)
     <center><h3>Note: If game runs too slowly, simply reload the page.</h3></center>
+<center><a onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="dino.html">Download</a></center>
 </div>
 </body>
 

@@ -69,6 +69,12 @@ if [ "$confirm" = "y" ]
 then
 sudo clear
 tput setaf 2
+echo "Installing Dependencies"
+echo "======================="
+tput setaf 6
+sudo sh $depends
+clear
+tput setaf 2
 echo "Installing"
 echo "=========="
 tput setaf 6

@@ -8,6 +8,8 @@ filename='iinstall.sh'
 name='Program Name'
 #Program Description
 description='A program to do things'
+#Script to install dependencies
+depends='./depends.sh'
 #Location of your binaries/scripts
 bin='./bin'
 #Location to install scripts to

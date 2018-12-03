@@ -2906,7 +2906,7 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
     <br>
     Cheated:<a id="cheat">False</a>
     <h4>Cheats (will not work on game over screen, must be used before start or during game):</h4>
-    <button onclick='Runner.instance_.setSpeed(prompt("Speed (Odd results, will reset next attempt):")); document.getElementById("cheat").innerHTML = "True";'>Change speed</button><button onclick='Runner.instance_.gameOver(); document.getElementById("cheat").innerHTML = "True";'>Game over</button><button onclick='Runner.instance_.playingIntro=true; document.getElementById("cheat").innerHTML = "True";'>Enable running in place</button><button onclick='Runner.instance_.playingIntro=true; document.getElementById("cheat").innerHTML = "True";'>Disable running in place</button>
+    <button onclick='Runner.instance_.setSpeed(prompt("Speed (Odd results, will reset next attempt):")); document.getElementById("cheat").innerHTML = "True";'>Change speed</button><button onclick='Runner.instance_.gameOver(); document.getElementById("cheat").innerHTML = "True";'>Game over</button><button onclick='Runner.instance_.playingIntro=true; document.getElementById("cheat").innerHTML = "True";'>Enable running in place</button><button onclick='Runner.instance_.playingIntro=false; document.getElementById("cheat").innerHTML = "True";'>Disable running in place</button>
     
     
 </div>

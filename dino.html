@@ -2888,7 +2888,7 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
         </div>
     </div>
 <div style="font-family:monospace;">
-<h1><center>Chrome Dinosaur Game In One HTML File!</h1></center>
+<h1><center>Chrome Dinosaur Game Improved</h1></center>
 <center><h4>Shrinkified By TurboWafflz (<a href="http://turbowafflz.github.io">turbowafflz.github.io</a>)
     <center><h3>Note: If game runs too slowly, simply reload the page.</h3></center>
     </h4>
@@ -2903,8 +2903,10 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
     Time(ms):<a id="time"></a>
     <br>
     Score factor:<a id="factor"></a>
-    <h4>Stuffs:</h4>
-    <button onclick='Runner.instance_.setSpeed(prompt("Speed (Odd results, will reset next attempt):"));'>Change Speed</button><button onclick="Runner.instance_.gameOver();">Game Over</button>
+    <br>
+    Cheated:<a id="cheat">False</a>
+    <h4>Cheats (will not work on game over screen, must be used before start or during game):</h4>
+    <button onclick='Runner.instance_.setSpeed(prompt("Speed (Odd results, will reset next attempt):")); document.getElementById("cheat").innerHTML = "True";'>Change speed</button><button onclick='Runner.instance_.gameOver(); document.getElementById("cheat").innerHTML = "True";'>Game over</button><button onclick="Runner.instance_.playingIntro=true; document.getElementById("cheat").innerHTML = "True";">Run in place</button>
     
     
 </div>

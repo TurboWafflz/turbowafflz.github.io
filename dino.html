@@ -2892,7 +2892,7 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
 <center><h4>Shrinkified By TurboWafflz (<a href="http://turbowafflz.github.io">turbowafflz.github.io</a>)
     <center><h3>Note: If game runs too slowly, simply reload the page.</h3></center>
     </h4>
-    <script>setInterval(function(){ document.getElementById("attempts").innerHTML = Runner.instance_.playCount; }, 10);setInterval(function(){ document.getElementById("rawscore").innerHTML = Runner.instance_.distanceRan; }, 10);setInterval(function(){ document.getElementById("hscore").innerHTML = Runner.instance_.highestScore; }, 10);setInterval(function(){ document.getElementById("time").innerHTML = Runner.instance_.runningTime; }, 1);setInterval(function(){ if(Runner.instance_.runningTime / Runner.instance_.distanceRan >= 2 || Runner.instance_.distanceRan == 0) { document.getElementById("validity").innerHTML = "True"; } else { document.getElementById("validity").innerHTML = "False"; } }, 1);</script>
+    <script>setInterval(function(){ document.getElementById("attempts").innerHTML = Runner.instance_.playCount; }, 10);setInterval(function(){ document.getElementById("rawscore").innerHTML = Runner.instance_.distanceRan; }, 10);setInterval(function(){ document.getElementById("hscore").innerHTML = Runner.instance_.highestScore; }, 10);setInterval(function(){ document.getElementById("time").innerHTML = Runner.instance_.runningTime; }, 1);setInterval(function(){ if(Runner.instance_.runningTime / Runner.instance_.distanceRan >= 2 || Runner.instance_.distanceRan == 0 ) { document.getElementById("validity").innerHTML = "True"; } else { document.getElementById("validity").innerHTML = "False"; } }, 1);setInterval(function(){ document.getElementById("factor").innerHTML = Runner.instance_.runningTime / Runner.instance_.distanceRan }, 10);</script>
     <h4>Stats:</h4>
     Attempts:<a id="attempts">0</a>
     <br>
@@ -2901,6 +2901,8 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
     Raw Highscore:<a id="hscore"></a>
     <br>
     Time(ms):<a id="time"></a>
+    <br>
+    Score factor (should be ~2 if score is valid):<a id="factor"></a>
     <br>
     Score valid:<a id="validity"></a>
     <h4>Stuffs:</h4>

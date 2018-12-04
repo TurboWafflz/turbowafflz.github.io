@@ -2891,6 +2891,7 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
 <h1><center>Chrome Dinosaur Game Improved</h1></center>
     <center><h3>Note: If game runs too slowly, simply reload the page.</h3></center>
     </h4>
+    <center>
     <script>setInterval(function(){ document.getElementById("attempts").innerHTML = Runner.instance_.playCount; }, 10);setInterval(function(){ document.getElementById("rawscore").innerHTML = Runner.instance_.distanceRan; }, 10);setInterval(function(){ document.getElementById("hscore").innerHTML = Runner.instance_.highestScore; }, 10);setInterval(function(){ document.getElementById("time").innerHTML = Math.trunc(Runner.instance_.runningTime); }, 1);setInterval(function(){ if(Runner.instance_.runningTime / Runner.instance_.distanceRan >= 2 || Runner.instance_.distanceRan == 0 ) { document.getElementById("validity").innerHTML = "True"; } else { document.getElementById("validity").innerHTML = "False"; } }, 1);setInterval(function(){ document.getElementById("factor").innerHTML = Runner.instance_.runningTime / Runner.instance_.distanceRan; }, 10);</script>
     <h4>Stats:</h4>
     Attempts:<a id="attempts">0</a>
@@ -2906,7 +2907,7 @@ document.addEventListener('DOMContentLoaded', onDocumentLoad);
     Cheated:<a id="cheat">False</a>
     <h4>Cheats (will not work on game over screen, must be used before start or during game):</h4>
     <button onclick='Runner.instance_.setSpeed(prompt("Speed (Odd results, will reset next attempt):")); document.getElementById("cheat").innerHTML = "True";'>Change speed</button><button onclick='Runner.instance_.gameOver(); document.getElementById("cheat").innerHTML = "True";'>Game over</button><button onclick='Runner.instance_.playingIntro=true; document.getElementById("cheat").innerHTML = "True";'>Enable running in place</button><button onclick='Runner.instance_.playingIntro=false; document.getElementById("cheat").innerHTML = "True";'>Disable running in place</button>
-    
+    </center>
     
 </div>
 </body>

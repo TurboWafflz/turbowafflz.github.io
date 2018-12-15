@@ -1,4 +1,7 @@
 #!/bin/bash
+r=`wmctrl -d | awk '{print $4}'`
+maxx=`echo $r | awk -Fx '{print $1}'`
+maxy=`echo $r | awk -Fx '{print $2}'`
 while true
 do
 bounce=100
@@ -19,7 +22,7 @@ eval $(xwininfo -id $(xdotool getactivewindow) |
          -e "s/^ \+Relative upper-left X: \+\([0-9]\+\).*/b=\1/p" \
          -e "s/^ \+Relative upper-left Y: \+\([0-9]\+\).*/t=\1/p" )
 speed=1
-while [ "$y" -le 1070 ]
+while [ "$y" -le `expr $maxy - 10` ]
 do
 eval $(xwininfo -id $(xdotool getactivewindow) |
   sed -n -e "s/^ \+Absolute upper-left X: \+\([0-9]\+\).*/x=\1/p" \

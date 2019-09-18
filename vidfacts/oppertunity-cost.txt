@@ -1,5 +1,5 @@
 1. Opportunity cost means giving up something for sometjing else
 2. I've made:
-  1. Geting a Lenovo Yoga instead of a ThinkPad
-  2. Installing Kubuntu instead of KDE Neon
-  3. Getting an Elegoo Arduino clone instead of an official Arduino one
+1. Geting a Lenovo Yoga instead of a ThinkPad
+2. Installing Kubuntu instead of KDE Neon
+3. Getting an Elegoo Arduino clone instead of an official Arduino one

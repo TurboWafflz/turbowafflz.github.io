@@ -4,6 +4,7 @@
         <meta name="propeller" content="5f790557625088788a46b015c4476e92">
         <!-- Google ads -->
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({
                 google_ad_client: "ca-pub-5421892665333193",
@@ -57,11 +58,18 @@
         <div style="background-color:black; border:2px dotted orange">
             <h1 style="color:red; text-align:center; font-family:monospace;">TurboWafflz</h1>
         </div>
-
-        <!--BUTTONS-->
-        <button onclick="location.replace('/index.html');" style="height:100%;">Home</button><button onclick="location.replace('/programs.html');" style="height:100%;">Programs</button><button onclick="location.replace('/social.html');" style="height:100%;">Social</button><button onclick="location.replace('/random.html');" style="height:100%;">Random Junk</button>
-        <noscript><a href="nojs.html">No javascript?</a></noscript>
-        <!--BUTTONS-->
+        <!--Buttons-->
+        <div id="buttons">
+        </div>
+        <script>
+            $(function(){
+                $("#buttons").load("buttons.html");
+            });
+        </script>
+        <!--
+<button onclick="location.replace('/index.html');" style="height:100%;">Home</button><button onclick="location.replace('/programs.html');" style="height:100%;">Programs</button><button onclick="location.replace('/social.html');" style="height:100%;">Social</button><button onclick="location.replace('/random.html');" style="height:100%;">Random Junk</button>
+<noscript><a href="nojs.html">No javascript?</a></noscript>
+-->
 
         <hr style="height:5px;">
         <h3>I do stuff. Some of its kinda okay.</h3>
@@ -73,10 +81,9 @@
             How fast can you keymash?
             <br>
             <a href="mashspeed.py">Download</a></div>
-        </div>
-    <footer>
-        <hr style="height:5px;">
-        <embed src="copyright.html">
-    </footer>
+        <footer>
+            <hr style="height:5px;">
+            <embed src="copyright.html">
+        </footer>
     </body>
 </html>

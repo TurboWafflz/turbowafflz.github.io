@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://widget.battleforthenet.com/widget.js" async></script>
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -11,22 +12,26 @@
         <style>
             body {
                 background-color: #c0c0c0;
+                font-family:monospace;
             }
             hr {
             }
         </style>
     </head>
     <body>
-        <embed style="width:100%; height:40px;" src='banner.html'>
+        <embed style="width:100%; height:35px;" src='../banner.html'>
+        <hr style="height:5px;">
         <div style="background-color:black; border:2px dotted orange">
-            <b><h1 onclick='window.href("https://turbowafflz.github.io")' style="color:red; text-align:center; font-family:monospace;">TurboWafflz</h1></b>
+            <h1 style="color:red; text-align:center; font-family:monospace;">TurboWafflz</h1>
         </div>
+
         <!--Buttons-->
         <div id="buttons">
+            <a href="nojs.html">No JavaScript?</a>
         </div>
         <script>
             $(function(){
-                $("#buttons").load("buttons.html");
+                $("#buttons").load("../buttons.html");
             });
         </script>
         <hr style="height:5px;">
@@ -34,6 +39,6 @@
         <center><h3>IInstall</h3></center>
         IInstall is an easy to setup user friendly installer. To set up IInstall to work with your program, edit the first few lines in the sh file to match your program.
         <br>
-        <center><button style='background-color:green; color:white; ' onclick='window.open("https://turbowafflz.github.io/iinstall.sh")' >Download IInstall 1.0</button></center>
+        <center><button style='background-color:green; color:white; width:300px;' onclick='window.open("https://turbowafflz.github.io/iinstall.sh")' >Download IInstall 1.0</button></center>
     </body>
 </html>

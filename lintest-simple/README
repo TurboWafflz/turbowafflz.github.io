@@ -1,0 +1,10 @@
+Before using lintest, install:
+boxes  
+figlet
+toilet 
+ncurses-bin
+speedtest-cli
+Optionally for extra features, install:
+cowsay
+lolcat
+cmatrix

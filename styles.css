@@ -3,8 +3,8 @@ body {
                 font-family: monospace;
             }
 code{
-    background-color: #999999;
-    color: black;
+    background-color: #073642;
+    color: eee8d5;
     font: mono;
     border: 2px solid black;
     border-radius: 10px;

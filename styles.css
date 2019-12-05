@@ -1,5 +1,5 @@
 body {
-    background-color: #c0c0c0;
+    background-color: #dddddd;
     font-family: monospace;
 }
 code{
@@ -11,6 +11,18 @@ code{
     padding: 5px 5px;
     margin: 5px 0px;
     display: inline-block;
+}
+button{
+    border: 1px solid black;
+    background: #afafaf;
+    border-radius: 5px;
+}
+hr{
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:#aaaaaa;
+    border-radius: 25px;
 }
 /* Prettify */
 .prettyprint {

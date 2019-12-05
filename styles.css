@@ -1,0 +1,14 @@
+body {
+                background-color: #c0c0c0;
+                font-family: monospace;
+            }
+code{
+    background-color: #999999;
+    color: black;
+    font: mono;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 5px 0px;
+    display: inline-block;
+}

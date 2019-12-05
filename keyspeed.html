@@ -2,6 +2,8 @@
     <head>
         <!--Stylesheet-->
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <!--Prettify-->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://widget.battleforthenet.com/widget.js" async></script>
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
@@ -37,10 +39,14 @@
             <li><b>ShiftSpeed: </b> Similar to SingleMashSpeed, but both left and right shift are counted.</li>
             <li><b>SingleMashSpeed: </b> Only one key is counted, this is automatically set when you start.</li>
         </ul>
-        All programs require one argument, the number of seconds to test for.
-        Example:
+        All programs require one argument, the number of seconds to test for.<br>
+        <b>Example:</b>
         <br>
-        <code>python3 mashspeed.py 10</code>
+        <code class="prettyprint">
+            #Run mashspeed with a 10 second time limit<br>
+            python3 mashspeed.py 10
+        </code>
+        </pre>
         <br>
         <br>
         <center><button style='background-color: green; color:white; width:300px;' onclick='window.open("keyspeed.zip")'>Download (requires Python 3)</button></center>

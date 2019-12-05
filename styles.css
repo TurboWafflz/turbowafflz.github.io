@@ -1,5 +1,5 @@
 body {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     font-family: monospace;
 }
 code{
@@ -23,6 +23,9 @@ hr{
     color:gray;
     background-color:#aaaaaa;
     border-radius: 25px;
+}
+a{
+    color: navy;
 }
 /* Prettify */
 .prettyprint {

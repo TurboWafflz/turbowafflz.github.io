@@ -1,7 +1,7 @@
 body {
-                background-color: #c0c0c0;
-                font-family: monospace;
-            }
+    background-color: #c0c0c0;
+    font-family: monospace;
+}
 code{
     background-color: #073642;
     color: eee8d5;
@@ -12,52 +12,53 @@ code{
     margin: 5px 0px;
     display: inline-block;
 }
+/* Prettify */
 .prettyprint {
-  color: #839496;
-  background-color: #002b36;
+    color: #839496;
+    background-color: #002b36;
 }
 
 .prettyprint .pln {
-  color: inherit;
+    color: inherit;
 }
 
 .prettyprint .str,
 .prettyprint .lit,
 .prettyprint .atv {
-  color: #2aa198;
+    color: #2aa198;
 }
 
 .prettyprint .kwd {
-  color: #268bd2;
+    color: #268bd2;
 }
 
 .prettyprint .com,
 .prettyprint .dec {
-  color: #586e75;
-  font-style: italic;
+    color: #586e75;
+    font-style: italic;
 }
 
 .prettyprint .typ {
-  color: #b58900;
+    color: #b58900;
 }
 
 .prettyprint .pun {
-  color: inherit;
+    color: inherit;
 }
 
 .prettyprint .opn {
-  color: inherit;
+    color: inherit;
 }
 
 .prettyprint .clo {
-  color: inherit;
+    color: inherit;
 }
 
 .prettyprint .tag {
-  color: #268bd2;
-  font-weight: bold;
+    color: #268bd2;
+    font-weight: bold;
 }
 
 .prettyprint .atn {
-  color: inherit;
+    color: inherit;
 }

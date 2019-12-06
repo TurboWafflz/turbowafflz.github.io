@@ -24,6 +24,7 @@ hr{
     background-color:#aaaaaa;
     border-radius: 25px;
 }
+/* Status indicators */
 .betaStatus{
     color: purple;
 }
@@ -39,6 +40,8 @@ hr{
 a{
     color: navy;
 }
+
+
 /* Prettify */
 .prettyprint {
     color: #839496;
@@ -48,7 +51,6 @@ a{
 .prettyprint .pln {
     color: inherit;
 }
-
 .prettyprint .str,
 .prettyprint .lit,
 .prettyprint .atv {

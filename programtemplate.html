@@ -2,6 +2,8 @@
     <head>
         <!--Stylesheet-->
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <!--Prettify-->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://widget.battleforthenet.com/widget.js" async></script>
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
@@ -10,7 +12,9 @@
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
-        <title>IICalc | TurboWafflz</title>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+        <title>Program Name | TurboWafflz</title>
     </head>
     <body>
         <embed style="width:100%; height:40px;" src='banner.html'>
@@ -28,19 +32,19 @@
         </script>
         <hr style="height:5px;">
         <br>
-        <center><h3>ImaginaryInfinity Calculator</h3></center>
-        ImaginaryInfinity Calculator is designed to have an intuitive CLI resembling that of Texas Instruments calculators. To preform another operation on a result, simply type the operation you wish to preform (eg. "/5" to divide the previous result by 5). The calculator will also run some Python 3 commands for more advanced functions (importing libraries is unfortunately not currently supported). To enable complex number support, simply type "complex on".
-        <br><br>
-        <b>To run locally, type: </b><code>python3 main.py</code> into a terminal in the same folder as the script.
+        <center><h3>Program Name</h3></center>
+        Program description
+        <br>
+        <br>
         <div id="fancyButtons" style="display:none;">
-            <center><button style='background-color: dodgerblue; color:white; width:300px;' onclick='window.open("https://calc.turbowafflz.repl.run")' >Try it online</button></center>
-            <center><button style='background-color: green; color:white; width:300px;' onclick='window.open("https://repl.it/@turbowafflz/Calc.zip")'>Download (requires Python 3)</button></center>
-            <center><button style='background-color: blue; color:white; width:300px;' onclick='window.open("https://repl.it/@turbowafflz/Calc")'>Browse the source code</button></center>
+            <center><button style='background-color: dodgerblue; color:white; width:300px;' onclick='window.open("[online version link]")' >Try it online</button></center>
+            <center><button style='background-color: green; color:white; width:300px;' onclick='window.open("[download link]")'>Download</button></center>
+            <center><button style='background-color: blue; color:white; width:300px;' onclick='window.open("[source code link]")'>Browse the source code</button></center>
         </div>
         <noscript>
-            <a href="https://calc.turbowafflz.repl.run">Try it online</a>
-            <a href="https://repl.it/@turbowafflz/Calc.zip">Download</a>
-            <a href="https://repl.it/@turbowafflz/Calc">Browse the source code</a>
+            <a href="[online version link]">Try it online</a>
+            <a href="[download link]">Download</a>
+            <a href="[source code link]">Browse the source code</a>
         </noscript>
         <script>
             document.getElementById('fancyButtons').style.display='block';

@@ -24,6 +24,15 @@ hr{
     background-color:#aaaaaa;
     border-radius: 25px;
 }
+.activeStatus{
+    color: green;
+}
+.idleStatus{
+    color: darkgoldenrod;
+}
+.discontinuedStatus{
+    color: red;
+}
 a{
     color: navy;
 }

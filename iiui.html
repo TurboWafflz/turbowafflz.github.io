@@ -36,6 +36,14 @@
         <br>
         <center><h3>IIUI</h3></center>
         To install the iiUI desktop environment simply run "iiuinstall.sh".
-        <center><button style='background-color:green; color:white; width:300px;' onclick='window.open("https://turbowafflz.github.io/iiui.zip")' >Download for Ubuntu</button></center>
+        <div id="fancyButtons" style="display:none;">
+            <center><button style='background-color: green; color:white; width:300px;' onclick='window.open("iiui.zip")'>Download (Ubuntu)</button></center>
+        </div>
+        <noscript>
+            <a href="iiui.zip">Download</a>
+        </noscript>
+        <script>
+            document.getElementById('fancyButtons').style.display='block';
+        </script>
     </body>
 </html>

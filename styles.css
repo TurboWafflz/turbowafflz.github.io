@@ -24,6 +24,9 @@ hr{
     background-color:#aaaaaa;
     border-radius: 25px;
 }
+.betaStatus{
+    color: purple;
+}
 .activeStatus{
     color: green;
 }

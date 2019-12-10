@@ -4,10 +4,10 @@ body {
 }
 code{
     background-color: #073642;
-    color: eee8d5;
+    color: #eee8d5;
     font: mono;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 5px 5px;
     margin: 5px 0px;
     display: inline-block;
@@ -15,7 +15,11 @@ code{
 button{
     border: 1px solid black;
     background-color: #cccccc;
-    border-radius: 5px;
+    border-radius: 7px;
+}
+div{
+    border-radius:7px;
+    border: 3px;
 }
 hr{
     height:5px;
@@ -26,19 +30,24 @@ hr{
 }
 .logo{
     background-color:black;
-    border:2px solid orange;
-    border-radius: 5px;
+    border:3px solid orange;
+    border-radius: 7px;
     color: red;
     text-align: center;
     font-family: monospace;
 }
 .banner{
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 2px solid red;
+    border-radius: 7px;
     width:100%;
     height:40px;
     background-color:orangered;
     color: white;
+    vertical-align: middle;
+}
+.fancyButtons{
+    display:none;
+    text-align: center;
 }
 /* Status indicators */
 .betaStatus{

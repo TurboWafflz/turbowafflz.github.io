@@ -2,7 +2,7 @@
     <head>
         <!--Stylesheet-->
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="jquery-1.10.2.js"></script>
         <script src="https://widget.battleforthenet.com/widget.js" async></script>
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,12 +13,12 @@
         <title>IInstall | TurboWafflz</title>
     </head>
     <body>
-        <embed style="width:100%; height:35px;" src='../banner.html'>
-        <hr style="height:5px;">
-        <div style="background-color:black; border:2px dotted orange">
-            <h1 style="color:red; text-align:center; font-family:monospace;">TurboWafflz</h1>
+        <embed class="banner" src='../banner.html'>
+        <hr>
+        <div class="logo">
+            <h1>TurboWafflz</h1>
         </div>
-
+        <hr>
         <!--Buttons-->
         <div id="buttons">
             <a href="nojs.html">No JavaScript?</a>
@@ -32,9 +32,10 @@
         <br>
         <center><h3>IInstall</h3></center>
         IInstall is an easy to setup, user friendly installer. To set up IInstall to work with your program, edit the first few lines in the sh file to match your program.
-        <br>
-        <div id="fancyButtons" style="display:none;">
-            <center><button style='background-color: green; color:white; width:300px;' onclick='window.open("iinstall.sh")'>Download</button></center>
+        <br><br>
+        <hr>
+        <div class="fancyButtons" id="fancyButtons" style="display:none;">
+            <button style='background-color: green; color:white; width:300px;' onclick='window.open("iinstall.sh")'>Download</button>
         </div>
         <noscript>
             <a href="iinstall.sh">Download</a>

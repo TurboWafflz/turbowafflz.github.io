@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <!--Prettify-->
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="jquery-1.10.2.js"></script>
         <script src="https://widget.battleforthenet.com/widget.js" async></script>
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,7 +17,7 @@
         <title>Program Name | TurboWafflz</title>
     </head>
     <body>
-        <embed style="width:100%; height:40px;" src='banner.html'>
+        <embed class="banner" src='banner.html'>
         <hr>
         <div style="background-color:black; border:2px dotted orange">
             <b><h1 onclick='window.href("https://turbowafflz.github.io")' style="color:red; text-align:center; font-family:monospace;">TurboWafflz</h1></b>
@@ -36,12 +36,12 @@
         <br>
         <center><h3>Program Name</h3></center>
         Program description
-        <br>
-        <br>
-        <div id="fancyButtons" style="display:none;">
-            <center><button style='background-color: dodgerblue; color:white; width:300px;' onclick='window.open("[online version link]")' >Try it online</button></center>
-            <center><button style='background-color: green; color:white; width:300px;' onclick='window.open("[download link]")'>Download</button></center>
-            <center><button style='background-color: blue; color:white; width:300px;' onclick='window.open("[source code link]")'>Browse the source code</button></center>
+        <br><br>
+        <hr>
+        <div class="fancyButtons" id="fancyButtons" style="">
+            <button style='background-color: dodgerblue; color:white; width:300px;' onclick='window.open("[online version link]")' >Try it online</button>
+            <button style='background-color: green; color:white; width:300px;' onclick='window.open("[download link]")'>Download</button>
+            <button style='background-color: blue; color:white; width:300px;' onclick='window.open("[source code link]")'>Browse the source code</button>
         </div>
         <noscript>
             <a href="[online version link]">Try it online</a>

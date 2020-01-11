@@ -4,7 +4,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <!--Prettify-->
         <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="jquery-1.10.2.js"></script>
         <script src="https://widget.battleforthenet.com/widget.js" async></script>
         <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -17,12 +17,12 @@
         <title>KeySpeed | TurboWafflz</title>
     </head>
     <body>
-        <embed style="width:100%; height:40px;" src='banner.html'>
+        <embed class="banner" src='banner.html'>
         <hr>
-        <div style="background-color:black; border:2px dotted orange">
-            <b><h1 onclick='window.href("https://turbowafflz.github.io")' style="color:red; text-align:center; font-family:monospace;">TurboWafflz</h1></b>
+        <div class="logo">
+            <b><h1 onclick='window.href("https://turbowafflz.github.io")'>TurboWafflz</h1></b>
         </div>
-        <br>
+        <hr>
         <!--Buttons-->
         <div id="buttons">
             <a href="nojs.html">No JavaScript?</a>
@@ -50,8 +50,9 @@
         </code> into a terminal in the same folder as the script.
     <br>
     <br>
-    <div id="fancyButtons" style="display:none;">
-        <center><button style='background-color: green; color:white; width:300px;' onclick='window.open("keyspeed.zip")'>Download (Requires Python 3)</button></center>
+        <hr>
+    <div class="fancyButtons" id="fancyButtons">
+        <button style='background-color: green; color:white; width:300px;' onclick='window.open("keyspeed.zip")'>Download (Requires Python 3)</button>
     </div>
     <noscript>
         <a href="keyspeed.zip">Download</a>

@@ -26,7 +26,7 @@ def main():
     oktext.draw(resselect)
     while True:
         click = resselect.checkMouse()
-        if click == None:
+        if click is None:
             click = Point(0, 0)
 
         if resselect.checkKey() == "Return" or (int(click.getX()) > int(640 / 2 - 100) and int(click.getX()) < int(640 / 2 + 100) and int(click.getY()) > int(120) and int(click.getY()) < int(150) ):

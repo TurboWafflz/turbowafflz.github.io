@@ -19,11 +19,11 @@ while True:
     timertext.setFill("red")
     keys=1
     text.setText(keys)
-    while(current-start < timelimit ):
+    while (current-start < timelimit ):
         timertext.setText(timelimit-(current-start))
         press=win.checkKey()
-        if(press == "Shift_L" or press == "Shift_R"):
-            keys=keys+1
+        if press in ["Shift_L", "Shift_R"]:
+            keys += 1
             print(keys)
             text.setText(keys)
         current=int(time.time())

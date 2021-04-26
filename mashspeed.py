@@ -15,10 +15,10 @@ while True:
     timertext.setFill("red")
     keys=1
     text.setText(keys)
-    while(current-start < timelimit ):
+    while (current-start < timelimit ):
         timertext.setText(timelimit-(current-start))
-        if(win.checkKey() != ""):
-            keys=keys+1
+        if (win.checkKey() != ""):
+            keys += 1
             print(keys)
             text.setText(keys)
         current=int(time.time())
